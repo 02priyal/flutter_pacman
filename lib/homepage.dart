@@ -148,6 +148,7 @@ class _HomePageState extends State<HomePage> {
     Timer.periodic(duration, (timer) {
       if (food.contains(player)) {
         food.remove(player);
+        score++;
       }
 
       switch (direction) {
